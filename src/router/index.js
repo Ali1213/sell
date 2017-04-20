@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 // import Hello from '@/components/Hello'
-import header from '../components/header/header'
+import header from '../components/header/header';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -12,4 +12,4 @@ export default new Router({
       component: header
     }
   ]
-})
+});
