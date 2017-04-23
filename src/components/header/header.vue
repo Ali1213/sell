@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+<!--  <div class="header">
     <div class="content-wrapper">
         <div class="avatar">
             <img width="64" height="64" :src="seller.avatar" />
@@ -8,21 +8,25 @@
     
     <div class="bulletin-wrapper"></div>
 
-  </div>
+  </div>-->
+  <div class="header">
+    我是header
+    </div>
 </template>
 
-<script>
-export default {
+<script type="">
+/* export default {
   name: 'header',
   props: {
     seller: {
       type: Object
     }
   }
-};
+}; */
+export default {};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style /* lang = "stylus"*/ scoped>
 
 </style>
