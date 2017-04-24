@@ -5,6 +5,8 @@ import App from './App';
 import router from './router';
 import VueResource from 'vue-resource';
 
+import 'common/styles/index.styl';
+
 Vue.config.productionTip = false;
 
 Vue.use(VueResource);
@@ -15,4 +17,4 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
-}).$mount('#app');
+});
