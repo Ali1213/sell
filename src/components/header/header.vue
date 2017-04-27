@@ -5,7 +5,7 @@
             <img width="64" height="64" :src="seller.avatar" />
         </div>
     </div>
-    
+
     <div class="bulletin-wrapper"></div>
 
   </div>-->
@@ -26,12 +26,26 @@
           <span class="text">{{seller.supports[0].description}}</span>
         </div>
       </div>
-      <div v-if="seller.supports" class="support-count">
+      <div v-if="seller.supports" class="support-count" @click="showDetail">
         <span class="count">{{seller.supports.length}}个</span>
         <i class="icon-keyboard_arrow_right"></i>
       </div>
     </div>
-    <div class="bulletin-wrapper"></div>
+    <div class="bulletin-wrapper" @click="showDetail">
+      <span class="bulletin-title"></span><span class="bulletin-text">{{seller.bulletin}}</span>
+      <i class="icon-keyboard_arrow_right"></i>
+    </div>
+    <div class="background">
+      <img :src="seller.avatar"  width="100%" height="100%">
+    </div>
+    <div v-show="detailShow" class="detail">
+      <div class="detail-wrapper clearfix">
+        <div class="detail-main"></div>
+      </div>
+      <div class="detail-close">
+        <i class="icon-close"></i>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -41,6 +55,16 @@ export default {
   props: {
     seller: {
       type: Object
+    }
+  },
+  data () {
+    return {
+      detailShow: false
+    };
+  },
+  methods: {
+    showDetail () {
+      this.detailShow = true;
     }
   },
   created () {
@@ -54,8 +78,10 @@ export default {
   @import "../../common/styles/mixin.styl"
 
   .header
+    position: relative
+    overflow:hidden
     color: #fff
-    background: #999
+    background: rgba(7, 17, 27, 0.5)
     .content-wrapper
       position: relative
       padding: 24px 12px 18px 24px
@@ -129,4 +155,60 @@ export default {
         margin-left: 2px
         line-height: 24px
         font-size: 10px
+    .bulletin-wrapper
+      position: relative
+      height: 28px
+      line-height: 28px
+      padding: 0 22px 0 12px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      background: rgba(7, 17, 27, 0.2)
+      .bulletin-title
+        display: inline-block
+        vertical-align: top
+        margin-top: 8px
+        width: 22px
+        height: 12px
+        bg-image('bulletin')
+        background-size: 22px 12px
+        background-repeat: no-repeat
+      .bulletin-text
+        vertical-align: top
+        margin: 0 4px
+        font-size: 10px
+      .icon-keyboard_arrow_right
+        position: absolute
+        font-size: 10px
+        right: 12px
+        top: 8px
+    .background
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      filter: blur(10px)
+    .detail
+      position: fixed
+      z-index: 100
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      overflow: auto
+      background: rgba(7,17,27,0.2)
+      .detail-wrapper
+        min-height: 100%
+        .detail-main
+          magin-top: 64px
+          paddind-bottom: 64px
+      .detail-close
+        position: relative
+        width: 32px
+        height: 32px
+        margin: -64px auto 0 auto
+        clear: both
+        font-size: 32px
 </style>
