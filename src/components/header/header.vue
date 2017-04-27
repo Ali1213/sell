@@ -1,14 +1,14 @@
 <template>
-<!--  <div class="header">
-    <div class="content-wrapper">
-        <div class="avatar">
-            <img width="64" height="64" :src="seller.avatar" />
-        </div>
-    </div>
+  <!--  <div class="header">
+      <div class="content-wrapper">
+          <div class="avatar">
+              <img width="64" height="64" :src="seller.avatar" />
+          </div>
+      </div>
 
-    <div class="bulletin-wrapper"></div>
+      <div class="bulletin-wrapper"></div>
 
-  </div>-->
+    </div>-->
   <div class="header">
     <div class="content-wrapper">
       <div class="avatar">
@@ -36,11 +36,15 @@
       <i class="icon-keyboard_arrow_right"></i>
     </div>
     <div class="background">
-      <img :src="seller.avatar"  width="100%" height="100%">
+      <img :src="seller.avatar" width="100%" height="100%">
     </div>
     <div v-show="detailShow" class="detail">
       <div class="detail-wrapper clearfix">
         <div class="detail-main"></div>
+        <h1 class="name">{{seller.name}}</h1>
+        <div class="star-wrapper">
+          <star :size="48" :score="seller.score"></star>
+        </div>
       </div>
       <div class="detail-close">
         <i class="icon-close"></i>
@@ -50,36 +54,40 @@
 </template>
 
 <script type="">
-export default {
-  name: 'header',
-  props: {
-    seller: {
-      type: Object
+  import star from 'components/star/star';
+  export default {
+    name: 'header',
+    props: {
+      seller: {
+        type: Object
+      }
+    },
+    data () {
+      return {
+        detailShow: false
+      };
+    },
+    methods: {
+      showDetail () {
+        this.detailShow = true;
+      }
+    },
+    created () {
+      this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
+    },
+    components: {
+      star
     }
-  },
-  data () {
-    return {
-      detailShow: false
-    };
-  },
-  methods: {
-    showDetail () {
-      this.detailShow = true;
-    }
-  },
-  created () {
-    this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
-  }
-};
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang = "stylus"  rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/styles/mixin.styl"
 
   .header
     position: relative
-    overflow:hidden
+    overflow: hidden
     color: #fff
     background: rgba(7, 17, 27, 0.5)
     .content-wrapper
@@ -107,7 +115,7 @@ export default {
             background-repeat: no-repeat
           .name
             margin-left: 6px
-            font-size:  16px
+            font-size: 16px
             line-height: 18px
             font-weight: bold
         .description
@@ -136,7 +144,7 @@ export default {
               bg-image('special_1')
           .text
             vertical-align: top
-            line-height:12px
+            line-height: 12px
             font-size: 10px
     .support-count
       position: absolute
@@ -198,12 +206,22 @@ export default {
       width: 100%
       height: 100%
       overflow: auto
-      background: rgba(7,17,27,0.2)
+      background: rgba(7, 17, 27, 0.8)
       .detail-wrapper
+        width: 100%
         min-height: 100%
         .detail-main
           magin-top: 64px
-          paddind-bottom: 64px
+          padding-bottom: 64px
+        .name
+          line-height: 16px
+          text-align: center
+          font-size: 16px
+          font-weight: 700
+        .star-wrapper
+          margin-top: 18px
+          padding: 2px 0
+
       .detail-close
         position: relative
         width: 32px
