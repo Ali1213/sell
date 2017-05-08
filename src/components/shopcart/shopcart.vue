@@ -16,20 +16,33 @@
           {{payDesc}}
         </div>
       </div>
+      <transition-group name="drop" tag="div" class="ball-container">
+        <div v-for="ball in balls" :key="item" class="ball" v-show="ball.show">
+          <div class="inner"></div>
+        </div>
+      </transition-group>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
+    data () {
+      let balls = [];
+      for (let i = 0; i < 5; i++) {
+        balls.push({
+          'show': false
+        });
+      }
+      return {
+        balls
+      };
+    },
     props: {
       selectFoods: {
         type: Array,
         default () {
-          return [{
-            'price': 30,
-            'count': 1
-          }];
+          return [];
         }
       },
       deliveryPrice: {
@@ -161,4 +174,18 @@
           &.enough
             background: #00b43c
             color: #fff
+    .ball-container
+      .ball
+        position: fixed
+        left: 32px
+        bottom: 22px
+        z-index: 200
+        &.drop-transition
+          translate: all 0.4s
+          .inner
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            background: rgb(0, 160, 220)
+            translate: all 0.4s
 </style>
