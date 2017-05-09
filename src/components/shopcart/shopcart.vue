@@ -17,7 +17,7 @@
         </div>
       </div>
       <transition-group name="drop" tag="div" class="ball-container">
-        <div v-for="ball in balls" :key="item" class="ball" v-show="ball.show">
+        <div v-for="ball in balls" :key="ball" class="ball" v-show="ball.show">
           <div class="inner"></div>
         </div>
       </transition-group>

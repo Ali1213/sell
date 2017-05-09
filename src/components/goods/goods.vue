@@ -32,7 +32,7 @@
                   <span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
                 </div>
                 <div class="cartcontrol-wrapper">
-                  <cartcontrol :food="food"></cartcontrol>
+                  <cartcontrol :food="food" @getball="getBall"></cartcontrol>
                 </div>
               </div>
             </li>
@@ -130,6 +130,12 @@
           height += item.clientHeight;
           this.listHeight.push(height);
         }
+      },
+      getBall (target) {
+        this._drop(target);
+      },
+      _drop (target) {
+
       }
     },
     components: {
