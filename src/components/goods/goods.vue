@@ -136,7 +136,7 @@
         this._drop(target);
       },
       _drop (target) {
-          //异步执行下落动画
+        // 异步执行下落动画
         this.$nextTick(() => {
           this.$refs.shopcart.drop(target);
         });
