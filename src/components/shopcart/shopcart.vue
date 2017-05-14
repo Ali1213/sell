@@ -1,49 +1,55 @@
 <template>
-  <div class="shopcart">
-    <div class="content">
-      <div class="content-left" @click="toggleList">
-        <div class="logo-wrapper">
-          <div class="logo" :class="{'highlight': totalCount>0}">
-            <span class="icon-shopping_cart" :class="{'highlight': totalCount>0}"></span>
+  <div>
+    <div class="shopcart">
+      <div class="content">
+        <div class="content-left" @click="toggleList">
+          <div class="logo-wrapper">
+            <div class="logo" :class="{'highlight': totalCount>0}">
+              <span class="icon-shopping_cart" :class="{'highlight': totalCount>0}"></span>
+            </div>
+            <div class="num" v-show="totalCount>0">{{totalCount}}</div>
           </div>
-          <div class="num" v-show="totalCount>0">{{totalCount}}</div>
+          <div class="price" :class="{'highlight': totalPrice>0}">{{totalPrice}}元</div>
+          <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
         </div>
-        <div class="price" :class="{'highlight': totalPrice>0}">{{totalPrice}}元</div>
-        <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
-      </div>
-      <div class="content-right">
-        <div class="pay" :class="payClass">
-          {{payDesc}}
+        <div class="content-right" @click.stop.preventDefault="pay">
+          <div class="pay" :class="payClass">
+            {{payDesc}}
+          </div>
         </div>
       </div>
-    </div>
-    <div class="ball-container">
-      <transition name="drop" v-on:before-enter="beforeEnter"
-                  v-on:enter="enter" v-on:after-enter="afterEnter"
-                  v-for="(ball,index) in balls" :key="index">
-        <div class="ball" v-show="ball.show">
-          <div class="inner inner-hook"></div>
+      <div class="ball-container">
+        <transition name="drop" v-on:before-enter="beforeEnter"
+                    v-on:enter="enter" v-on:after-enter="afterEnter"
+                    v-for="(ball,index) in balls" :key="index">
+          <div class="ball" v-show="ball.show">
+            <div class="inner inner-hook"></div>
+          </div>
+        </transition>
+      </div>
+      <transition name="fold">
+        <div class="shopcart-list" v-show="listShow">
+          <div class="list-header">
+            <h1 class="title">购物车</h1><span class="empty" @click="empty">清空</span>
+          </div>
+          <div class="list-content" ref="listContent">
+            <ul>
+              <li class="food" v-for="food in selectFoods">
+                <span class="name">{{food.name}}</span>
+                <div class="price">
+                  <span>￥{{food.price * food.count}}</span>
+                </div>
+                <div class="cartcontrol-wrapper">
+                  <cartcontrol :food="food"></cartcontrol>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </transition>
     </div>
-    <transition name="fold">
-      <div class="shopcart-list" v-show="listShow">
-        <div class="list-header">
-          <h1 class="title">购物车</h1><span class="empty" @click="empty">清空</span>
-        </div>
-        <div class="list-content" ref="listContent">
-          <ul>
-            <li class="food" v-for="food in selectFoods">
-              <span class="name">{{food.name}}</span>
-              <div class="price">
-                <span>￥{{food.price * food.count}}</span>
-              </div>
-              <div class="cartcontrol-wrapper">
-                <cartcontrol :food="food"></cartcontrol>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <transition name="fade">
+      <div class="list-mask" v-show="listShow" @click="hideList">
       </div>
     </transition>
   </div>
@@ -186,6 +192,15 @@
         this.selectFoods.forEach((food) => {
           food.count = 0;
         });
+      },
+      hideList () {
+        this.fold = true;
+      },
+      pay () {
+        if (this.totalPrice < this.minPrice) {
+          return;
+        }
+        window.alert(`支付${this.totalPrice}`);
       }
     },
     components: {
@@ -352,4 +367,20 @@
           position: absolute
           right: 0
           bottom: 6px
+
+  .list-mask
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 40
+    opacity: 1
+    background: rgba(7, 17, 27, 0.6)
+    backdrop-filter: blur(10px)
+    &.fade-enter, &.fade-leave-active
+      opacity: 0
+      background: rgba(7, 17, 27, 0)
+
 </style>
+
