@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0811fd1f-849b-4f10-950e-bdb58ae067e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/food/food.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cartControl/cartControl.vue" afterPath="$PROJECT_DIR$/src/components/cartControl/cartControl.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/food/food.vue" afterPath="$PROJECT_DIR$/src/components/food/food.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/goods/goods.vue" afterPath="$PROJECT_DIR$/src/components/goods/goods.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,19 +26,19 @@
       <file leaf-file-name="goods.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/goods/goods.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="151" column="31" lean-forward="false" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+            <state relative-caret-position="-620">
+              <caret line="34" column="61" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="61" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="e#1885#1921#0" expanded="true" />
-                <element signature="e#2335#2924#0" expanded="false" />
-                <element signature="e#2941#3336#0" expanded="false" />
-                <element signature="e#3385#3670#0" expanded="false" />
-                <element signature="e#3693#4039#0" expanded="false" />
-                <element signature="e#4067#4402#0" expanded="false" />
-                <element signature="e#5507#5985#0" expanded="false" />
-                <element signature="e#6208#6398#0" expanded="false" />
-                <element signature="e#7153#7430#0" expanded="false" />
+                <element signature="e#1904#1940#0" expanded="true" />
+                <element signature="e#2354#2943#0" expanded="false" />
+                <element signature="e#2960#3355#0" expanded="false" />
+                <element signature="e#3404#3689#0" expanded="false" />
+                <element signature="e#3712#4058#0" expanded="false" />
+                <element signature="e#4086#4421#0" expanded="false" />
+                <element signature="e#5526#6004#0" expanded="false" />
+                <element signature="e#6227#6417#0" expanded="false" />
+                <element signature="e#7172#7449#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -46,8 +47,8 @@
       <file leaf-file-name="shopcart.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/shopcart/shopcart.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="369" column="0" lean-forward="true" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
+            <state relative-caret-position="-332">
+              <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -55,7 +56,6 @@
                 <element signature="n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="e#2106#2142#0" expanded="true" />
                 <element signature="e#2462#2712#0" expanded="false" />
-                <element signature="e#2728#3920#0" expanded="false" />
                 <element signature="e#4014#4216#0" expanded="false" />
                 <element signature="e#4249#4921#0" expanded="false" />
                 <element signature="e#4940#5354#0" expanded="false" />
@@ -69,9 +69,14 @@
       <file leaf-file-name="food.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="e#2423#2777#0" expanded="false" />
+                <element signature="e#2797#3486#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,8 +96,8 @@
       <file leaf-file-name="cartControl.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/cartControl/cartControl.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="468">
+              <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -120,19 +125,24 @@
       <find>pay</find>
       <find>shop</find>
       <find>3d</find>
-      <find>getBall</find>
       <find>drop-transition</find>
       <find>shopcart-list</find>
       <find>toggle</find>
       <find>toggleList</find>
-      <find>listShow</find>
       <find>totalCount</find>
       <find>selectedFood</find>
       <find>selectFood</find>
       <find>selectMenu</find>
-      <find>food</find>
       <find>tran</find>
       <find>fold</find>
+      <find>.price</find>
+      <find>BScroll</find>
+      <find>v-el</find>
+      <find>listShow</find>
+      <find>getball</find>
+      <find>_constructed</find>
+      <find>getBall</find>
+      <find>food</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,9 +156,9 @@
         <option value="$PROJECT_DIR$/src/common/styles/mixin.styl" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/components/cartControl/cartControl.vue" />
         <option value="$PROJECT_DIR$/src/components/shopcart/shopcart.vue" />
         <option value="$PROJECT_DIR$/src/components/goods/goods.vue" />
+        <option value="$PROJECT_DIR$/src/components/cartControl/cartControl.vue" />
         <option value="$PROJECT_DIR$/src/components/food/food.vue" />
       </list>
     </option>
@@ -171,10 +181,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-81" />
-    <option name="y" value="11" />
-    <option name="width" value="891" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -194,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,6 +313,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,11 +441,12 @@
       <workItem from="1494510116546" duration="6179000" />
       <workItem from="1494660345690" duration="25704000" />
       <workItem from="1494945233549" duration="3267000" />
+      <workItem from="1494992691611" duration="11013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124845000" />
+    <option name="totallyTimeSpent" value="135858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,10 +458,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-81" y="11" width="891" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22508793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14285715" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -488,15 +499,15 @@
           <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#1885#1921#0" expanded="true" />
-            <element signature="e#2335#2924#0" expanded="false" />
-            <element signature="e#2941#3336#0" expanded="false" />
-            <element signature="e#3385#3670#0" expanded="false" />
-            <element signature="e#3693#4039#0" expanded="false" />
-            <element signature="e#4067#4402#0" expanded="false" />
-            <element signature="e#5507#5985#0" expanded="false" />
-            <element signature="e#6208#6398#0" expanded="false" />
-            <element signature="e#7153#7430#0" expanded="false" />
+            <element signature="e#1904#1940#0" expanded="true" />
+            <element signature="e#2354#2943#0" expanded="false" />
+            <element signature="e#2960#3355#0" expanded="false" />
+            <element signature="e#3404#3689#0" expanded="false" />
+            <element signature="e#3712#4058#0" expanded="false" />
+            <element signature="e#4086#4421#0" expanded="false" />
+            <element signature="e#5526#6004#0" expanded="false" />
+            <element signature="e#6227#6417#0" expanded="false" />
+            <element signature="e#7172#7449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,7 +523,6 @@
             <element signature="n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2106#2142#0" expanded="true" />
             <element signature="e#2462#2712#0" expanded="false" />
-            <element signature="e#2728#3920#0" expanded="false" />
             <element signature="e#4014#4216#0" expanded="false" />
             <element signature="e#4249#4921#0" expanded="false" />
             <element signature="e#4940#5354#0" expanded="false" />
@@ -596,15 +606,15 @@
           <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#1885#1921#0" expanded="true" />
-            <element signature="e#2335#2924#0" expanded="false" />
-            <element signature="e#2941#3336#0" expanded="false" />
-            <element signature="e#3385#3670#0" expanded="false" />
-            <element signature="e#3693#4039#0" expanded="false" />
-            <element signature="e#4067#4402#0" expanded="false" />
-            <element signature="e#5507#5985#0" expanded="false" />
-            <element signature="e#6208#6398#0" expanded="false" />
-            <element signature="e#7153#7430#0" expanded="false" />
+            <element signature="e#1904#1940#0" expanded="true" />
+            <element signature="e#2354#2943#0" expanded="false" />
+            <element signature="e#2960#3355#0" expanded="false" />
+            <element signature="e#3404#3689#0" expanded="false" />
+            <element signature="e#3712#4058#0" expanded="false" />
+            <element signature="e#4086#4421#0" expanded="false" />
+            <element signature="e#5526#6004#0" expanded="false" />
+            <element signature="e#6227#6417#0" expanded="false" />
+            <element signature="e#7172#7449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,7 +650,6 @@
             <element signature="n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2106#2142#0" expanded="true" />
             <element signature="e#2462#2712#0" expanded="false" />
-            <element signature="e#2728#3920#0" expanded="false" />
             <element signature="e#4014#4216#0" expanded="false" />
             <element signature="e#4249#4921#0" expanded="false" />
             <element signature="e#4940#5354#0" expanded="false" />
@@ -686,15 +695,15 @@
           <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#1885#1921#0" expanded="true" />
-            <element signature="e#2335#2924#0" expanded="false" />
-            <element signature="e#2941#3336#0" expanded="false" />
-            <element signature="e#3385#3670#0" expanded="false" />
-            <element signature="e#3693#4039#0" expanded="false" />
-            <element signature="e#4067#4402#0" expanded="false" />
-            <element signature="e#5507#5985#0" expanded="false" />
-            <element signature="e#6208#6398#0" expanded="false" />
-            <element signature="e#7153#7430#0" expanded="false" />
+            <element signature="e#1904#1940#0" expanded="true" />
+            <element signature="e#2354#2943#0" expanded="false" />
+            <element signature="e#2960#3355#0" expanded="false" />
+            <element signature="e#3404#3689#0" expanded="false" />
+            <element signature="e#3712#4058#0" expanded="false" />
+            <element signature="e#4086#4421#0" expanded="false" />
+            <element signature="e#5526#6004#0" expanded="false" />
+            <element signature="e#6227#6417#0" expanded="false" />
+            <element signature="e#7172#7449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -730,7 +739,6 @@
             <element signature="n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2106#2142#0" expanded="true" />
             <element signature="e#2462#2712#0" expanded="false" />
-            <element signature="e#2728#3920#0" expanded="false" />
             <element signature="e#4014#4216#0" expanded="false" />
             <element signature="e#4249#4921#0" expanded="false" />
             <element signature="e#4940#5354#0" expanded="false" />
@@ -796,15 +804,15 @@
           <caret line="91" column="17" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#1885#1921#0" expanded="true" />
-            <element signature="e#2335#2924#0" expanded="false" />
-            <element signature="e#2941#3336#0" expanded="false" />
-            <element signature="e#3385#3670#0" expanded="false" />
-            <element signature="e#3693#4039#0" expanded="false" />
-            <element signature="e#4067#4402#0" expanded="false" />
-            <element signature="e#5507#5985#0" expanded="false" />
-            <element signature="e#6208#6398#0" expanded="false" />
-            <element signature="e#7153#7430#0" expanded="false" />
+            <element signature="e#1904#1940#0" expanded="true" />
+            <element signature="e#2354#2943#0" expanded="false" />
+            <element signature="e#2960#3355#0" expanded="false" />
+            <element signature="e#3404#3689#0" expanded="false" />
+            <element signature="e#3712#4058#0" expanded="false" />
+            <element signature="e#4086#4421#0" expanded="false" />
+            <element signature="e#5526#6004#0" expanded="false" />
+            <element signature="e#6227#6417#0" expanded="false" />
+            <element signature="e#7172#7449#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,35 +1119,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/cartControl/cartControl.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="468">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/goods/goods.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="151" column="31" lean-forward="false" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+        <state relative-caret-position="-620">
+          <caret line="34" column="61" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="61" />
           <folding>
             <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="e#1885#1921#0" expanded="true" />
-            <element signature="e#2335#2924#0" expanded="false" />
-            <element signature="e#2941#3336#0" expanded="false" />
-            <element signature="e#3385#3670#0" expanded="false" />
-            <element signature="e#3693#4039#0" expanded="false" />
-            <element signature="e#4067#4402#0" expanded="false" />
-            <element signature="e#5507#5985#0" expanded="false" />
-            <element signature="e#6208#6398#0" expanded="false" />
-            <element signature="e#7153#7430#0" expanded="false" />
+            <element signature="e#1904#1940#0" expanded="true" />
+            <element signature="e#2354#2943#0" expanded="false" />
+            <element signature="e#2960#3355#0" expanded="false" />
+            <element signature="e#3404#3689#0" expanded="false" />
+            <element signature="e#3712#4058#0" expanded="false" />
+            <element signature="e#4086#4421#0" expanded="false" />
+            <element signature="e#5526#6004#0" expanded="false" />
+            <element signature="e#6227#6417#0" expanded="false" />
+            <element signature="e#7172#7449#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/shopcart/shopcart.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="369" column="0" lean-forward="true" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
+        <state relative-caret-position="-332">
+          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -1147,7 +1155,6 @@
             <element signature="n#transition#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2106#2142#0" expanded="true" />
             <element signature="e#2462#2712#0" expanded="false" />
-            <element signature="e#2728#3920#0" expanded="false" />
             <element signature="e#4014#4216#0" expanded="false" />
             <element signature="e#4249#4921#0" expanded="false" />
             <element signature="e#4940#5354#0" expanded="false" />
@@ -1159,9 +1166,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/food/food.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="70" column="36" lean-forward="false" selection-start-line="70" selection-start-column="36" selection-end-line="70" selection-end-column="36" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#transition#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#2423#2777#0" expanded="false" />
+            <element signature="e#2797#3486#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
