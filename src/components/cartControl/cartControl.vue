@@ -24,7 +24,7 @@
           return;
         }
         Vue.set(this.food, 'count', this.food.count ? this.food.count + 1 : 1);
-        this.$emit('getball', event.target);
+        this.$root.eventHub.$emit('cart.add', event.target);
       },
       decreaseCount (event) {
         if (!event._constructed) {
