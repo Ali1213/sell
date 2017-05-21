@@ -1,14 +1,14 @@
 <template>
   <div class="ratingselect">
     <div class="rating-type border-1px">
-      <span class="block positive" :class="{'active':selectType === 2}" @click="select(2,$event)">{{desc.all}}<span
+      <span class="block positive" :class="{'active':selectTypeData === 2}" @click="select(2,$event)">{{desc.all}}<span
         class="count">{{ratings.length}}</span></span>
-      <span class="block positive" :class="{'active':selectType === 0}" @click="select(0,$event)">{{desc.positive}}<span
+      <span class="block positive" :class="{'active':selectTypeData === 0}" @click="select(0,$event)">{{desc.positive}}<span
         class="count">{{positives.length}}</span></span>
-      <span class="block negative" :class="{'active':selectType === 1}" @click="select(1,$event)">{{desc.negative}}<span
+      <span class="block negative" :class="{'active':selectTypeData === 1}" @click="select(1,$event)">{{desc.negative}}<span
         class="count">{{negtives.length}}</span></span>
     </div>
-    <div class="switch" :class="{'on': onlyContent}" @click="toggleContent">
+    <div class="switch" :class="{'on': onlyContentData}" @click="toggleContent">
       <span class="icon-check_circle"></span>
       <span class="text">只看有内容的评价</span>
     </div>
@@ -48,21 +48,27 @@
         }
       }
     },
+    data () {
+      return {
+        selectTypeData: this.selectType,
+        onlyContentData: this.onlyContent
+      };
+    },
     methods: {
       select (type, event) {
         if (!event._constructed) {
           return;
         }
 
-        this.selectType = type;
+        this.selectTypeData = type;
         this.$emit('ratingtypeSelect', type);
       },
       toggleContent () {
         if (!event._constructed) {
           return;
         }
-        this.onlyContent = !this.onlyContent;
-        this.$emit('contentToggle', this.onlyContent);
+        this.onlyContentData = !this.onlyContentData;
+        this.$emit('contentToggle', this.onlyContentData);
       }
     },
     computed: {
