@@ -135,6 +135,9 @@
         return !this.fold;
       }
     },
+    created () {
+      this.$root.eventHub.$on('cart.add', this.drop);
+    },
     methods: {
       drop (el) {
         for (let i = 0, l = this.balls.length; i < l; i++) {

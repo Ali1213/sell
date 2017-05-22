@@ -32,7 +32,7 @@
                   <span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
                 </div>
                 <div class="cartcontrol-wrapper">
-                  <cartcontrol :food="food" @getball="getBall"></cartcontrol>
+                  <cartcontrol :food="food"></cartcontrol>
                 </div>
               </div>
             </li>
@@ -51,7 +51,9 @@
   import shopcart from 'components/shopcart/shopcart';
   import cartcontrol from 'components/cartControl/cartControl';
   import food from 'components/food/food';
+  import Vue from 'vue';
   const ERR_OK = 0;
+//  const eventHub = new Vue();
   export default {
     props: {
       seller: {
@@ -134,9 +136,6 @@
           height += item.clientHeight;
           this.listHeight.push(height);
         }
-      },
-      getBall (target) {
-        this._drop(target);
       },
       _drop (target) {
         // 异步执行下落动画
