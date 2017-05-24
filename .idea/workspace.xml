@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d04be4df-9231-4cc2-b237-c8869f415296" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/seller/seller.vue" afterPath="$PROJECT_DIR$/src/components/seller/seller.vue" />
-    </list>
+    <list default="true" id="d04be4df-9231-4cc2-b237-c8869f415296" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -114,8 +112,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="560" />
-    <option name="y" value="175" />
+    <option name="x" value="90" />
+    <option name="y" value="85" />
     <option name="width" value="1213" />
     <option name="height" value="843" />
   </component>
@@ -226,7 +224,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/mywork/yisa-consulting-services-portal-frontend" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -317,15 +315,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495432158367</updated>
-      <workItem from="1495432159648" duration="13511000" />
+      <workItem from="1495432159648" duration="14709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13511000" />
+    <option name="totallyTimeSpent" value="14709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="560" y="175" width="1213" height="843" extended-state="0" />
+    <frame x="90" y="85" width="1213" height="843" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2561702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
